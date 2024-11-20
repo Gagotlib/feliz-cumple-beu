@@ -1,3 +1,14 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+	// "rules": {
+	// 	"@typescript-eslint/ban-types": [
+	// 		"error",
+	// 		{
+	// 			"types": {
+	// 				"{}": false
+	// 			}
+	// 		}
+	// 	]
+	// },
+	// "extends": ["next/core-web-vitals", "next/typescript"]
+	"extends": "next/core-web-vitals"
 }
