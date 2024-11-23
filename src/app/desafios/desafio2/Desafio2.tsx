@@ -55,7 +55,7 @@ export default function Desafio2({}: Props) {
 				<h1 className='text-4xl font-bold'>Desafío número 2 !</h1>
 
 				<label htmlFor='respuesta1' className='text-2xl font-bold'>
-					En esta imagen está el origen, detras hay un código:
+					En ellos está el origen: {pidePista && <p> _____ _ ____ </p>}
 				</label>
 				<input type='text' id='respuesta1' value={respuesta} onChange={(e) => setRespuesta(e.target.value)} className='text-black h-10 rounded-lg px-4' />
 				{isIncorrect && (
@@ -75,13 +75,7 @@ export default function Desafio2({}: Props) {
 				{isCorrect && (
 					<>
 						<p className='py-4 text-green-400'>Respuesta Correcta</p>
-						<Link
-							href='/desafios/desafio3'
-							hidden={!isCorrect}
-							type='button'
-							className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
-							onClick={() => dispatch(nextStage())}
-						>
+						<Link href='/desafios/desafio3' hidden={!isCorrect} type='button' className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' onClick={() => dispatch(nextStage())}>
 							Siguiente desafio
 						</Link>
 					</>

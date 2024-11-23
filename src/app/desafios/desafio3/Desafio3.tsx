@@ -54,7 +54,7 @@ export default function Desafio3({}: Props) {
 				<h1 className='text-4xl font-bold'>Último desafío!</h1>
 
 				<label htmlFor='respuesta1' className='text-2xl font-bold'>
-					Los 2 gustos de healdo que vos comes y yo nunca comeria:{pidePista && <span> ________ _ _____ _________ </span>}
+					Los 2 gustos de healdo que vos comes y yo nunca comeria:{pidePista && <p> ________ _ _____ _________ </p>}
 				</label>
 				<input type='text' id='respuesta1' value={respuesta} onChange={(e) => setRespuesta(e.target.value)} className='text-black h-10 rounded-lg px-4' />
 				{isIncorrect && (
